@@ -1120,6 +1120,38 @@ select{
     color: #6d6c6c;
 }
 
+@media screen and (max-width:769px){
+    #about-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-image{
+        margin-bottom:2vh;
+    }
+
+    #about-desc>p:first-of-type{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:426px){
+    #about-desc-container{
+        width:98%;
+        padding-right:5vw;
+    }
+
+    #about-desc h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #about-statistics{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 /* styling for the contact page */
 
 #contact{
