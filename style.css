@@ -1353,6 +1353,17 @@ footer{
     font-size: 0.9rem;
 }
 
+@media screen and (max-width:426px){
+    #footer-top-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-desc{
+        width:80%;
+    }
+}
+
 #empty-footer-space{
     height:20vh;
     background-color: var(--background-color2);
