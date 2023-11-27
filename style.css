@@ -182,6 +182,12 @@ body{
     font-size: 1.125rem;
 }
 
+@media screen and (max-width:426px) {
+    #home-content p{
+        margin:0 0 3vh 0;
+    }
+}
+
 #home-content a{
     text-decoration:none;
     color:white;
@@ -197,6 +203,18 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+}
+
+@media screen and (max-width:426px) {
+    #home-content a{
+        width:25vw;
+    }
+}
+
+@media screen and (max-width:769px){
+    #home-content a{
+        height:4vh;
+    }
 }
 
 #home-content a:hover{
