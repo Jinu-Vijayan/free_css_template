@@ -122,6 +122,29 @@ body{
     background-image: url(./assets/images/hexagon-white.svg);
 }
 
+#hidden-nav-icon{
+    display: none;
+    color: var(--icon-normal-color);
+}
+
+@media screen and (max-width:426px) {
+    .hide-nav-links{
+        display: none;
+    }
+
+    #hidden-nav-icon{
+        display: initial;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:769px){
+    .hide-nav-icons{
+        display: none;
+    }
+}
+
 /* Styling for the home section of the site */
 
 #home{
