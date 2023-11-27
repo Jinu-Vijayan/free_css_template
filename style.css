@@ -319,12 +319,12 @@ body{
     text-align: center;
 }
 
-.service-card ul{
+ul{
     list-style: none;
     color: gray;
 }
 
-.service-card ul li::before{
+ul li::before{
     content: "\220E";
     color:var(--icon-hover-and-button-color);
     font-weight: bold;
