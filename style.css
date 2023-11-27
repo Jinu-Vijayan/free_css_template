@@ -1274,6 +1274,32 @@ select{
     border: 1px solid #6d6c6c;
 }
 
+
+@media screen and (max-width:769px){
+    #contact-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-details-container{
+        width:60%;
+    }
+
+    #contact-details-container>p:first-of-type{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:426px){
+    #contact-details-container{
+        width:80%;
+    }
+
+    #contact-links{
+        flex-wrap: wrap;
+    }
+}
+
 /* Styling for the footer */
 
 footer{
