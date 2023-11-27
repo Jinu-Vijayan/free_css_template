@@ -82,6 +82,7 @@ body{
 .nav-icons{
     display: flex;
     gap:0.7vw;
+    justify-content: center;
 }
 
 .nav-icons .icon-container{
@@ -683,6 +684,8 @@ select{
     color: var(--icon-hover-and-button-color);
 }
 
+/* Styling for the project page */
+
 #project-gallery-container{
     padding:12vh 0;
     display: flex;
@@ -768,4 +771,135 @@ select{
 
 #project-gallery .project-gallery-image-contaniner:hover .project-gallery-invisible-text{
     color: var(--icon-normal-color);
+}
+
+#team-of-consultants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color2);
+    padding: 10vh 0;
+}
+
+#team-of-consultants-header h2{
+    font-family: var(--font-type2),sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #454444;
+}
+
+#team-of-consultants-header p{
+    margin: 0 25% 5% 25%;
+    color: #6d6c6c;
+}
+
+#consultant-cards-container{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.consultant-image{
+    width: 100%;
+    overflow: hidden;
+}
+
+.consultant-image img{
+    transition:0.5s;
+    margin-bottom: 2vh;
+}
+
+.consultant-image img:hover{
+    transform:scale(1.1);
+}
+
+.consultant-name{
+    font-family: var(--font-type1),sans-serif;
+    margin-bottom: 2vh;
+    font-size: 1.125rem;
+}
+
+.consultant-position{
+    font-family: var(--font-type2);
+    font-weight: 700;
+    margin-bottom: 2vh;
+    font-size: 1rem;
+}
+
+/* Styling for the about page */
+
+#about{
+    padding:12vh 0;
+    width: 100%;
+}
+
+#about-container{
+    display: flex;
+    justify-content: center;
+}
+
+#about-image{
+    display:flex;
+    justify-content: center;
+}
+
+#about-image img{
+    width: 80%;
+    border-radius: 5px;
+}
+
+#about-desc-container{
+    width:50%;
+    display: flex;
+    align-items: center;
+}
+
+#about-desc>p:first-of-type{
+    font-size: 0.875rem;
+    font-family: var(--font-type2),sans-serif;
+    color: var(--icon-hover-and-button-color);
+    margin-bottom:2vh;
+}
+
+#about-desc h2{
+    font-family: var(--font-type2);
+    color: #454444;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom:3vh;
+}
+
+#about-desc>p:last-of-type{
+    color:#6d6c6c;
+    margin-bottom:3vh;
+}
+
+#about-desc ul{
+    margin-bottom:3vh;
+}
+
+#about-statistics{
+    display: flex;
+    gap: 3vw;
+}
+
+.statistic-card{
+    display: flex;
+    align-items: center;
+    gap:1vw;
+}
+
+.statistic-card p:first-of-type{
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: var(--font-type2);
+    color: var(--icon-hover-and-button-color);
+}
+
+.statistic-card p:last-of-type{
+    font-family: var(--font-type1),sans-serif;
+    width:50%;
+    color: #6d6c6c;
 }
