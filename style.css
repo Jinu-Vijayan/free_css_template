@@ -1014,6 +1014,36 @@ select{
     font-size: 1rem;
 }
 
+
+
+@media screen and (max-width:769px){
+    #project-gallery{
+        grid-template-columns: repeat(2,277px);
+    }
+
+    #consultant-cards-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:426px){
+    #project-gallery-container h2{
+        margin:1vh 6vw 5vh;
+    }
+
+    #project-gallery-slectors{
+        flex-wrap: wrap;
+    }
+
+    #project-gallery-slectors button{
+        margin-bottom: 0.5vh;
+    }
+
+    #project-gallery{
+        grid-template-columns: 277px;
+    }
+}
+
 /* Styling for the about page */
 
 #about{
