@@ -324,7 +324,7 @@ ul{
     color: gray;
 }
 
-ul li::before{
+ul li:not(.no-bullets)::before{
     content: "\220E";
     color:var(--icon-hover-and-button-color);
     font-weight: bold;
