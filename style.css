@@ -294,6 +294,33 @@ body{
     transform: scale(1.1);
 }
 
+@media screen and (max-width:769px) {
+    #intro-top-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    #intro-top-desc{
+        width: 80%;
+    }
+
+    #intro-top-desc>p:nth-of-type(1){
+        text-align: center;
+    }
+
+    #intro-img{
+        width:80%;
+    }
+
+    #intro-img img{
+        height: 40vw;
+    }
+
+}
+
 #intro-bottom-section{
     display: flex;
     justify-content: center;
@@ -330,6 +357,21 @@ body{
 
 .intro-bottom-card p{
     color: gray;
+}
+
+@media screen and (max-width:426px){
+    #intro-bottom-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-bottom-card{
+        width:70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Styling for the services section */
