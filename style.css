@@ -848,6 +848,28 @@ select{
     color: var(--icon-hover-and-button-color);
 }
 
+
+@media screen and (max-width:769px){
+    #call-me-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #call-me-desc{
+        width:80%
+    }
+
+    #call-me-desc p:first-of-type{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:426px){
+    #call-me-desc{
+        width:90%;
+    }
+}
+
 /* Styling for the project page */
 
 #project-gallery-container{
