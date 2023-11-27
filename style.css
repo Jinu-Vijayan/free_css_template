@@ -640,6 +640,47 @@ ul li:not(.no-bullets)::before{
     width: 90%;
 }
 
+
+@media screen and (max-width:769px){
+    .details-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .details-card-image{
+        width:80%;
+        margin-bottom:3vh;
+    }
+
+    .details-card-desc{
+        width:80%
+    }
+}
+
+@media screen and (max-width:426px){
+
+    .details-card-desc{
+        width:90%
+    }
+
+    .details-card-desc-container{
+        width:90%;
+    }
+
+    #details-changer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .details-card-desc-container h2{
+        text-align: center;
+    }
+
+    .graph{
+        margin-bottom: 3vh;
+    }
+}
+
 /* styling for the testimonials part */
 
 #testimonials{
