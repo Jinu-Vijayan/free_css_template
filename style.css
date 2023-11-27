@@ -30,6 +30,27 @@ body{
     font-family: "Open Sans",sans-serif;
 }
 
+#to-top{
+    position:fixed;
+    z-index: 3;
+    top:90%;
+    right:1%;
+    width: 52px;;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--icon-hover-and-button-color);
+}
+
+#to-top a{
+    color: var(--icon-normal-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
 /* Styling done for the header part */
 
 #header{
