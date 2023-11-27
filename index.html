@@ -254,15 +254,20 @@
                 </div>
                 <div id="call-me-form">
                     <form action="#">
-                        <input type="text" name="" id="">
-                        <input type="text" name="" id="">
-                        <input type="email" name="" id="">
-                        <select name="" id="">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="text" name="phone" id="Phone" placeholder="Phone" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <select name="options" id="options" required>
                             <option selected disabled>Interested in...</option>
-                            <option value="">Off The Ground</option>
-                            <option value=""></option>
-                            <option value=""></option>
+                            <option value="1">Off The Ground</option>
+                            <option value="2">Accelerated Growth</option>
+                            <option value="3">Market Domination</option>
                         </select>
+                        <div id="checkbox-wth-label">
+                            <input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" required>
+                            <label for="terms_and_conditions">I agree with Aria's stated <a href="#call-me">Privacy Policy</a> and <a href="#call-me">Terms & Conditions</a></label>
+                        </div>
+                        <button type="submit">CALL ME</button>
                     </form>
                 </div>
             </div>
