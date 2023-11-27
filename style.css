@@ -21,6 +21,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
@@ -680,4 +681,91 @@ select{
 #call-me-form button:hover{
     background-color: transparent;
     color: var(--icon-hover-and-button-color);
+}
+
+#project-gallery-container{
+    padding:12vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-gallery-container p:first-of-type{
+    margin-bottom:0.5vh;
+    font-size: 0.875rem;
+    color: var(--icon-hover-and-button-color);
+    font-family: var(--font-type2),sans-serif;
+}
+
+#project-gallery-container h2{
+    margin-bottom:5vh;
+    font-family: var(--font-type2),sans-serif;
+    font-size: 1.75rem;
+    color: #454444;
+}
+
+#project-gallery-slectors{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-bottom:4vh
+}
+
+#project-gallery-slectors button{
+    background-color: rgba(216, 215, 215, 0.768);
+    border: none;
+    padding:0.5rem 1rem;
+    border-radius: 5px;
+    font-family: var(--font-type2);
+    font-weight: 700;
+    color: #6d6c6c;
+}
+
+#project-gallery-slectors button:hover{
+    background-color: var(--icon-hover-and-button-color);
+    color: var(--icon-normal-color);
+}
+
+#project-gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 277px);
+}
+
+#project-gallery div{
+    overflow: hidden;
+}
+
+.project-gallery-image-contaniner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-gallery-image-contaniner .project-gallery-invisible-text{
+    position: absolute;
+    z-index: 1;
+    color: transparent;
+    font-size: 1.27rem;
+    font-weight: 700;
+    font-family: var(--font-type2),sans-serif;
+}
+
+#project-gallery img{
+    width: 277px;
+    margin-bottom: -6px;
+    transition: 0.5s;
+}
+
+#project-gallery img:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+#project-gallery .project-gallery-image-contaniner:hover{
+    background-color: black;
+}
+
+#project-gallery .project-gallery-image-contaniner:hover .project-gallery-invisible-text{
+    color: var(--icon-normal-color);
 }
