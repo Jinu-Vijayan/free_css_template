@@ -513,3 +513,75 @@ body{
 #marketing-graph{
     width: 90%;
 }
+
+/* styling for the testimonials part */
+
+#testimonials{
+    background-color: var(--background-color2);
+    padding-top: 12vh;
+    padding-bottom:12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vh;
+}
+
+#testimonials-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3vh;
+}
+
+#testimonials-heading h2{
+    font-family: var(--font-type2),sans-serif;
+    font-size: 1.75rem;
+    color: #454444;
+}
+
+#testimonials-heading p{
+    width: 70%;
+    color: #6d6c6c;
+}
+
+#testimonials-carasol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.arrow{
+    font-size: 4rem;
+    color: #6d6c6c;
+}
+
+#testimonial-carasol-cards-container{
+    width:65%;
+    display: flex;
+    gap: 5vw;
+}
+
+.testimonial-card{
+    width:calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap:3vh;
+}
+
+.testimonial-image{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.testimonieal-message{
+    color: #6d6c6c;
+}
+
+.testimonial-author{
+    font-family: var(--font-type2),sans-serif;
+    font-weight: 700;
+}
